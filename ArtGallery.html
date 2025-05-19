@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Art Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fffdf8;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f3e9dc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #777;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #f3e9dc;
+      color: #555;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art Gallery</h1>
+    <p> Find Unique Abstract Artworks To Decorate Your Life</p>
+  </header>
+
+  <section class="gallery">
+    <img src="1.jpg" alt="Painting 1">
+    <img src="2.jpg" alt="Painting 2">
+    <img src="3.jpg" alt="Painting 3">
+    <img src="4.jpg" alt="Painting 4">
+    <img src="5.jpg" alt="Painting 5">
+    <img src="6.jpg" alt="Painting 6">
+    <!-- Add more images as needed -->
+  </section>
+<h3><a href="Home.html">HOME</a></h3>
+<a href="AboutUs.html">About Us</a>
+
+
+
+  <footer>
+    &copy; 2025 Art Gallery. All rights reserved.
+  </footer>
+</body>
+</html>
